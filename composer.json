@@ -1,0 +1,22 @@
+{
+  "name": "dimns/mb_ucfirst",
+  "description": "Provides missing multi-byte function mb_ucfirst",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitrii Shcherbakov",
+      "email": "info@bestion.ru",
+      "homepage": "http://bestion.ru",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/mb_ucfirst.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.0.0"
+  }
+}
