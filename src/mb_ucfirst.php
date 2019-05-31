@@ -8,7 +8,7 @@ if (!function_exists('mb_ucfirst') && extension_loaded('mbstring')) {
      * Converts the first character to uppercase
      *
      * @param string $str      - String to convert
-     * @param string $encoding - Encoding, default null
+     * @param string $encoding - Encoding, default mb_internal_encoding()
      *
      * @return string
      *
@@ -18,7 +18,7 @@ if (!function_exists('mb_ucfirst') && extension_loaded('mbstring')) {
     function mb_ucfirst($str, $encoding = null)
     {
         if (empty($encoding)) {
-            $encoding = mb_detect_encoding($str);
+            $encoding = mb_internal_encoding();
         }
 
         $str = mb_ereg_replace('^[\ ]+', '', $str);
